@@ -11,7 +11,7 @@ Currently assuming:
 
     prices and quantities are randomaly generated for now
 
-users data is being saved with the __del__ method, that is unpredictable sometimes
+users data is being saved with the __del__ method, that is sometimes unpredictable
 
 
 
