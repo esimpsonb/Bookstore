@@ -11,9 +11,7 @@ Currently assuming:
 
     prices and quantities are randomaly generated for now
 
-System is the main project right now, users can already save their data, a load method should be implemented and connect it with the login method of the system
-
 users data is being saved with the __del__ method, that is unpredictable sometimes
 
-System.interface doesnt work yet, must fix ASAP
+
 
