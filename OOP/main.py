@@ -5,7 +5,7 @@ from Classes.user import User
 from Classes.bookstore import Bookstore
 from Classes.cart import Cart
 from Classes.supplier import Supplier
-
+from Classes.delivery import Delivery_Boy
 
 Enrique = User("esimpson",10000000)
 Antartica = Bookstore()
@@ -15,6 +15,8 @@ for book in Antartica.inventory:
     break 
 
 Antartica.buy(libreke,1,Fabrica)
+
+Benjamin = Delivery_Boy()
 
 
 #print(Enrique.options())

@@ -13,5 +13,4 @@ Currently assuming:
 
 users data is being saved with the __del__ method, that is sometimes unpredictable
 
-
-
+The matrix distance is not accurate (paid APIs would fix this)
