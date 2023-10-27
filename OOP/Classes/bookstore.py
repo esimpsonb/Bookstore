@@ -10,7 +10,7 @@ class Bookstore():
     def __init__(self):
         self.name = "Antartica"
         self.orders = []
-        self.money = 0
+        self.money = 10000000
         self.inventory = self.initialize_inventory()
         self.inv_inf = self.books_information()
     
@@ -45,3 +45,10 @@ class Bookstore():
         file_path = os.path.join(directory_path, self.name+".pkl")
         with open(file_path, "wb") as file:
             pickle.dump(self, file)
+    
+    def buy(self,book,amount,supplier):
+        if supplier.supply[book.title]*amount < self.money:
+            self.money -=  supplier.supply[book.title]*amount
+            self.inventory[book]+=amount
+        else: print("Not enough money to buy the selected books")
+
