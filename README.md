@@ -7,10 +7,14 @@ Bookstore interface project, currently allowing interaction between users and th
 
 A csv file with book titles is loaded and using an API all their information is obtained.
 
+V 1.01
+-
+
+Minor details on the saved/load scheme have been fixed (still issues with saving orders and loading data) a suppliers class has been added and can interact with the bookstore administration
+
 Future versions:
 -
 - Cart time limit and book reservation when selected
-- Supplier class
 - Recomendations
 - Delivery
 - Inventory Control
