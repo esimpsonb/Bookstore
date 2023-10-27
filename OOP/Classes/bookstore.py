@@ -2,6 +2,8 @@ from .order import Order
 from .book import Book
 import polars as pl
 import numpy as np
+import os
+import pickle
 
 class Bookstore():
 
@@ -33,5 +35,13 @@ class Bookstore():
     
     def sell(self,buyer):
         for book in buyer.cart.added_books: self.inventory[book]-=1
-        self.orders.append(Order(buyer))
+        order = Order(buyer)
+        self.orders.append(order)
         self.money += self.orders[-1].price
+        self.save_changes()
+    
+    def save_changes(self):
+        directory_path = r"C:\Users\enriq\OneDrive\Documents\GitHub\Bookstore\OOP\Data\Bookstore_data"
+        file_path = os.path.join(directory_path, self.name+".pkl")
+        with open(file_path, "wb") as file:
+            pickle.dump(self, file)
