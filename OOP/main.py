@@ -14,10 +14,14 @@ for book in Antartica.inventory:
     libreke = book
     break 
 
+address1 = "228 Republica, Viña del Mar, Chile"
+address2 = "130 Ecuador, Viña del Mar, Chile"
+
+
 Antartica.buy(libreke,1,Fabrica)
 
 Benjamin = Delivery_Boy()
-
+print(Benjamin.distance_matrix([address1,address2]))
 
 #print(Enrique.options())
 
