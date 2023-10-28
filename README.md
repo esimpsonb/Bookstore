@@ -15,12 +15,11 @@ Minor details on the saved/load scheme have been fixed (still issues with saving
 V 1.02
 -
 
-Delivery boy class was added, and an algorithms folder was created, for now only it only has TSP solver (greedy) using google ORTools, they are still not linked though.
+Delivery boy class was added, and an algorithms folder was created, for now only it only has TSP solver, using google ORTools, connecting it with the System class should be the next step.
 
 Future versions:
 -
 - Cart time limit and book reservation when selected
 - Recomendations
-- Delivery
 - Inventory Control
 - Cover recognition 
