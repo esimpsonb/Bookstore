@@ -14,3 +14,6 @@ Currently assuming:
 users data is being saved with the __del__ method, that is sometimes unpredictable
 
 The matrix distance is not accurate (paid APIs would fix this)
+
+
+The TSP is solved using a greedy algorithm (must add better algorithms such as clarck and wright, insrtion, Linn Kernigahn and genetic)

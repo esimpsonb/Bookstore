@@ -7,22 +7,22 @@ from Classes.cart import Cart
 from Classes.supplier import Supplier
 from Classes.delivery import Delivery_Boy
 
-Enrique = User("esimpson",10000000)
-Antartica = Bookstore()
-Fabrica = Supplier("Fabrica")
-for book in Antartica.inventory:
-    libreke = book
-    break 
+#Enrique = User("esimpson",10000000)
+#Antartica = Bookstore()
+#Fabrica = Supplier("Fabrica")
+#for book in Antartica.inventory:
+    #libreke = book
+    #break 
+#Antartica.buy(libreke,1,Fabrica)
 
 address1 = "228 Republica, Viña del Mar, Chile"
 address2 = "130 Ecuador, Viña del Mar, Chile"
-
-
-Antartica.buy(libreke,1,Fabrica)
+address3 = "370 Condell, Viña del Mar, Chile"
+addresses =[address1,address2,address3]
 
 Benjamin = Delivery_Boy()
-print(Benjamin.distance_matrix([address1,address2]))
 
+print(Benjamin.tsp(addresses))
 #print(Enrique.options())
 
 

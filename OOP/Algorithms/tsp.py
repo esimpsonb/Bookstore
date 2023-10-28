@@ -2,6 +2,7 @@ from ortools.constraint_solver import pywrapcp
 import numpy as np
 import osmnx as ox
 import networkx as nx
+from ortools.constraint_solver import routing_enums_pb2
 
 
 class TSP():
@@ -30,7 +31,8 @@ class TSP():
         data["depot"] = 0
         return data
 
-    def solve(self,distances):
+    def solve(self,addresses):
+        distances = self.preprocessing(addresses)
         data = self.create_data_model(distances)
         manager = pywrapcp.RoutingIndexManager(len(data["distance_matrix"]), data["num_vehicles"], data["depot"])
         routing = pywrapcp.RoutingModel(manager)
