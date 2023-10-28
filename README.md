@@ -12,6 +12,11 @@ V 1.01
 
 Minor details on the saved/load scheme have been fixed (still issues with saving orders and loading data) a suppliers class has been added and can interact with the bookstore administration
 
+V 1.02
+-
+
+Delivery boy class was added, and an algorithms folder was created, for now only it only has TSP solver (greedy) using google ORTools, they are still not linked though.
+
 Future versions:
 -
 - Cart time limit and book reservation when selected
